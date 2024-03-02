@@ -28,13 +28,13 @@ public:
 };
 int main(){
 	student s1 = student("Thanaphon", 87);
-	student s2 = student("Teeparat", 96);
+	student s2 = student("Boy", 96);
 	
 
 	// mutate attribute value of student object
 	s1.score = 76;
 	cout << s1.name << " " << s1.score << endl;
-	cout << s2.name << " " << s2.score << endl;
+	s2.printDetails();
 
 	// Declare student object that go to default constructor
 	student s3;
@@ -44,9 +44,10 @@ int main(){
 	
 
 	// can use {} to initialized
-	student students[3] = { {"Tanatat", 65} };
-	students[0].printDetails();
-
-
+	student students[3] = { {"Tanatat", 65}, {"Pongsakorn", 77}, {"Mongkol", 75} };
+	for(student s : students){
+		s.printDetails();
+	}
+	
 	return 0;
 }
