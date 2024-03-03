@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
+    ios_base::sync_with_stdio(false);
 	int n;
 	cin >> n;
 
@@ -10,7 +11,7 @@ int main(){
 	}
 
 	// for each in c++
-	for(stringc x : arr){
+	for(string x : arr){
 		cout << x << " ";
 	}
 	cout << endl;

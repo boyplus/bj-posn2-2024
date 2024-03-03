@@ -47,8 +47,9 @@ int main(){
 
 	cout << "Erase key from map" << endl;
 	mp.erase("Thanaphon");
-	for(auto& x:mp){
-		cout << x.first << " " << x.second << endl;
+
+	for(map<string,int>::iterator x = mp.begin(); x != mp.end(); x++){
+		cout << x->first << " " << x->second << endl;
 	}
 	cout << endl;
 

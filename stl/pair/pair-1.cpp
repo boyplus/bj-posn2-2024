@@ -3,11 +3,11 @@
 using namespace std;
 typedef pair<int,int> pii;
 int main(){
-    pii p1;
+    pair<float, float> p1;
 
     // Init, access by using .first, .second
-    p1.first = 10;
-    p1.second = 12;
+    p1.first = 10.1;
+    p1.second = 12.12;
 
     cout << p1.first << " " << p1.second << endl;
 
@@ -26,7 +26,7 @@ int main(){
     cout << p4.first << " " << p4.second << endl;
 
     // tie -> copy value of pair to var
-    int a,b;
+    float a,b;
     tie(a, b) = p1;
     cout << a << " " << b << endl;
 
