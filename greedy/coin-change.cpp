@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
+// Given that we always use highest coin first
 int main(){
 	int n,k;
 	cin >> n >> k;
