@@ -29,8 +29,3 @@ int main(){
 	else cout << ans << "\n";
 	return 0;
 }
-/*
-4 11
-6 1 5 9
-
-*/
